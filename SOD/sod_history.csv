@@ -1,0 +1,10 @@
+a,b,c,size,symbol,opacity,fill,stroke,title
+8,5,20,40,circle,1,black,white,
+3,10,20,40,circle,1,red,white,
+3,9,21,40,circle,1,#b5835a,white,
+3,8,22,40,circle,1,#9a9996,white,
+3,7,23,40,circle,1,#3584e4,white,
+3,6,24,40,circle,1,#57e389,white,
+2,5,15,40,circle,1,#1a5fb4,white,
+3,5,24,40,x,1,#813d9c,white,
+3,4,24,40,x,1,#e01b24,white,

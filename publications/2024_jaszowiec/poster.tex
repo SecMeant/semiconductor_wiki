@@ -1,4 +1,4 @@
-\documentclass[25pt, a0paper, portrait]{tikzposter}
+\documentclass[25pt, a0paper, portrait, innermargin=0.5cm, margin=0cm, colspace=0.5cm, blockverticalspace=8mm]{tikzposter}
 
 \usepackage{fontspec}        % Allows font customization
 \usepackage[T1]{fontenc}     % Use T1 font encoding
@@ -11,9 +11,9 @@
 \bibliography{refs}
 
 \usepackage{wrapfig}
+\usepackage{authblk}
 
 \title{Low Cost Silicon-based Semiconductor Device Manufacturing}
-\author{{\LARGE Patryk Wlazłyń, Rafał Mikołajczyk, Kornel Uriasz,} {\normalsize Maciej Pacholczyk}}
 
 % Define colors (optional)
 \definecolor{titlebgcolor}{RGB}{0,120,180}
@@ -23,6 +23,20 @@
 % Custom styles
 \usetheme{Autumn}
 \usecolorstyle{Default}
+
+\renewcommand\Affilfont{\LARGE}
+\renewcommand{\Authfont}{\LARGE}
+
+\author[1]{Patryk Wlazłyń}
+\author[2]{Rafał Mikołajczyk}
+\author[2]{Kornel Uriasz}
+\author[2]{Maciej Pacholczyk}
+\affil[1]{Independent, Wrocław, Poland}
+\affil[2]{Politechnika Wrocławska, Wybrzeże Stanisława Wyspiańskiego 27, 50-370 Wrocław}
+
+\makeatletter
+\def\maketitle{\AB@maketitle}
+\makeatother
 
 \begin{document}
 
@@ -47,7 +61,7 @@
         High costs of acquiring and maintaining specialized and high quality
         equipment for semiconductor manufacturing poses a challenge for
         individuals to experiment and learn about the technology.  \textbf{We
-        present a cost-effective methods for engineering equipment and complete
+        present cost-effective methods for engineering equipment and complete
         process for silicon-based semiconductor device manufacturing and
         testing.} We focused on obtaining results in an easily affordable
         environments by sacrificing economic scaling and quality of the
@@ -124,12 +138,12 @@
     \block{Doping}{
         \textbf{We propose a modified process to the one described in Fangsuwannarak et
         Al. 2019 \cite{Fangsuwannarak}}. It yields a less, but sufficiently viscous
-        dopant and significantly \textbf{extends it's shelf life in room temperature}.
+        dopant and significantly \textbf{extends its shelf life at room temperature}.
         We spin coat the dopant on the wafer, do pre deposition on hot plate
         and thermal diffusion in the furnace. This creates
         N-doped wells and phosphosilicate glass (PSG). The PSG is stripped
         using \( NH_{4}F\cdot HF\) solution dissolved in DI water.
-        For \textbf{selective doping} we use thick (\(\sim\)500nm) thermally grown
+        For \textbf{selective doping}, we use thick (\(\sim\)500nm) thermally grown
         \(SiO_{2}\), that stops spin coated SOD from penetrating too far into
         the wafer.
         We control for rate of doping by doing a \textbf{double-oxidation}
@@ -143,7 +157,7 @@
         manufacture solar cells and NPN MOSFET devices with a double-sided tape
         on which the wafer is placed. The solution, while very cheap and
         simple, but is not very convenient. The tape has to be replaced
-        frequently and contaminates the back of the wafer. For this reason, we
+        frequently, and contaminates the back of the wafer. For this reason, we
         \textbf{designed and 3D-printed} a \textbf{rotating bed} with an
         opening in the middle and a chamber.  The bed is connected to the
         \textbf{BLDC motor} that can spin the bed to up to \textbf{4000 RPM}.

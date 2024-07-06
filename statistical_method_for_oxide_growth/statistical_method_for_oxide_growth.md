@@ -21,4 +21,35 @@ Provided that the contamination has a random spacial distribution on the wafer, 
 Naturally, the possibility of obtaining a critical defect on the oxide drops with each next stage, meaning more stages - less likelihood for a defect, but at a cost of longer overall process.
 
 # Results
-To be determined.
+## Results #1
+Reported on 2024.07.14
+Contacts and testing on 2024.07.13
+Oxide growing on 2024.07.07
+
+The results are disappointing. It's very easy to create, even a small contact and get a leak in the oxide.  We get
+resistivity comparable to those without oxide.  Tests was done on 2x clean (fresh from the supplier) P100 wafer and one
+already processed and cleaned NPN wafer.  All of the samples had the very same issue. Never got more terrible results.
+The growing was done in tube furnace for all the samples.
+
+I suspect that the source of the contamination is the furnace itself. The bricks are huge source of dust or small brick
+particles that are not removed by the cleaning acids.
+
+We need sealed quartz labware that we can process the wafers when they are in the furnace.
+I suspect that this will solve the issue.
+
+We may want to add DI water rinse **after** the IPA bath too, maybe we leave some residues, which influence the oxide
+growth?
+Prepare samples cleaned in both ways and check them under the SEM.
+
+### Process
+Reapeat 4 times:
+    3min Clean-1
+    DI Water rinse
+    3min Clean-2
+    DI Water rinse
+    Aceton bath
+    Air pressure clean
+    IPA bath
+    Air pressure clean
+    Grow dry 20min 1100C
+
